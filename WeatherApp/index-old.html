@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="WeatherApp">
+  <head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+
+  <body ng-controller="WeatherController">
+    <h1>Weather Service</h1>
+	<input type="text" name="inputZipCode" ng-model="zipcode">
+	<input type="button" value="Click Me!" ng-click="ButtonClick()" /> <p ng-show="error" ng-cloak>{{error}}</p>
+	<div ng-show = "isVisible" ng-cloak>
+	</br>
+	Name: {{name}}
+	</br>
+	Humidityumidity: {{humidity}}
+	</br>
+	Pressureressure: {{pressure}}
+	</br>
+	TempMax: {{tempMax}}
+	</br>
+	TempMin: {{tempMin}}
+	</div>
+	<script data-require="angular.js@1.2.22" data-semver="1.2.22" src="https://code.angularjs.org/1.2.22/angular.js"></script>
+    <script src="WeatherController.js"></script>
+    <script src="WeatherService.js"></script>
+  </body>
+
+</html>

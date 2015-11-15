@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="WeatherApp">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">	
+	</head>
+  <body  ng-controller="WeatherController">
+
+    <div class="container maindiv"> 
+		<div class = "row">
+			<div class="col-sm-12">
+				<h1>Weather App</h1>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-sm-6">
+				<form>
+				  <div class="form-group">
+					<label for="inputZipCode">US ZipCode</label>
+					<input type="text" class="form-control" id="inputZipCode" ng-model="zipcode">
+					<h5  ng-show="error" ng-cloak>{{error}}</h5>
+				  </div>
+				  <input type="button" class="btn btn-default" value="Click Me!" ng-click="ButtonClick()"/>
+				</form>
+			</div>
+			<div class="col-sm-6">
+				<!--<p ng-show="error" ng-cloak>{{error}}</p>-->
+				
+				<div ng-show = "isVisible" ng-cloak>
+					<h4>Name: {{name}}</h4>
+					<h4>Humidity: {{humidity}}</h4>
+					<h4>Pressure: {{pressure}}</h4>
+					<h4>Temperature Max: {{tempMax}}</h4>
+					<h4>Temperature Min: {{tempMin}}</h4>
+				</div>
+
+			</div>
+		</div>
+    </div> <!-- /container -->
+	
+	<script data-require="angular.js@1.2.22" data-semver="1.2.22" src="https://code.angularjs.org/1.2.22/angular.js"></script>
+    <script src="WeatherController.js"></script>
+    <script src="WeatherService.js"></script>
+  </body>
+</html>
