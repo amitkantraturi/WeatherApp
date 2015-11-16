@@ -30,7 +30,7 @@ This solution exposes a rest end point, designed in ExpressJs. The API returns w
 	{"name":"Mountain View","humidity":93,"tempMax":11.67,"tempMin":11.67,"pressure":1021.35}
 
 ##<a name='Technologiesused'>Technologies  used</a>
-
+####NodeJs
 ####AngularJs
 ####ExpressJs
 
@@ -42,7 +42,7 @@ This solution exposes a rest end point, designed in ExpressJs. The API returns w
 
 #<a name='Deployment'>Deployment</a>
 ##<a name='WeatherAPI'>WeatherAPI</a>
-Execute be command line to start the service
+Execute in command line to start the service
 
 	\WeatherApplication\WeatherApi\node_modules>node server.js
 	
