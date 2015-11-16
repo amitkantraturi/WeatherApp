@@ -8,7 +8,8 @@
 * [Deployment](#Deployment)
 	* [WeatherAPI](#WeatherAPI)
 	* [WeatherApp](#WeatherApp)
-* [Appendix](#Appendix)
+* [Appendix](#Appendix)       
+
 # <a name='Summary'>Summary</a>
 This Single Page Application provides weather information for a specific zipcode in US.
 
